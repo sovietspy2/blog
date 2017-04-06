@@ -1,0 +1,141 @@
+06 Apr 2017 15:09:15,159 INFO  ~ Starting /home/sovietspy2/workspace/play-1.4.3/blog
+06 Apr 2017 15:09:16,510 WARN  ~ You're running Play! in DEV mode
+06 Apr 2017 15:09:16,633 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
+06 Apr 2017 15:09:31,697 INFO  ~ Connected to jdbc:h2:mem:play;MODE=MYSQL;LOCK_MODE=0 for default
+06 Apr 2017 15:09:34,891 ERROR ~ 
+
+@73i36nnbc
+Internal Server Error (500) for request GET /
+
+Oops: PersistenceException
+Unexpected error : Unexpected Error, caused by exception PersistenceException: Unable to build EntityManagerFactory
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.Play.start(Play.java:569)
+	at play.Play.detectChanges(Play.java:656)
+	at play.Invoker$Invocation.init(Invoker.java:199)
+	at Invocation.HTTP Request(Play!)
+Caused by: javax.persistence.PersistenceException: Unable to build EntityManagerFactory
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:925)
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:900)
+	at play.db.jpa.JPAPlugin.onApplicationStart(JPAPlugin.java:204)
+	at play.plugins.PluginCollection.onApplicationStart(PluginCollection.java:616)
+	at play.Play.start(Play.java:539)
+	... 3 more
+Caused by: org.hibernate.AnnotationException: Illegal attempt to map a non collection as a @OneToMany, @ManyToMany or @CollectionOfElements: models.Tag.owningPost
+	at org.hibernate.cfg.annotations.CollectionBinder.getCollectionBinder(CollectionBinder.java:328)
+	at org.hibernate.cfg.AnnotationBinder.processElementAnnotations(AnnotationBinder.java:1849)
+	at org.hibernate.cfg.AnnotationBinder.processIdPropertiesIfNotAlready(AnnotationBinder.java:895)
+	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:728)
+	at org.hibernate.cfg.Configuration$MetadataSourceQueue.processAnnotatedClassesQueue(Configuration.java:3625)
+	at org.hibernate.cfg.Configuration$MetadataSourceQueue.processMetadata(Configuration.java:3579)
+	at org.hibernate.cfg.Configuration.secondPassCompile(Configuration.java:1381)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1786)
+	at org.hibernate.ejb.EntityManagerFactoryImpl.<init>(EntityManagerFactoryImpl.java:96)
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:918)
+	... 7 more
+06 Apr 2017 15:12:11,161 ERROR ~ Restart: Need to restart Play because /home/sovietspy2/workspace/play-1.4.3/blog/conf/application.conf has been changed
+java.lang.RuntimeException: Need to restart Play because /home/sovietspy2/workspace/play-1.4.3/blog/conf/application.conf has been changed
+	at play.ConfigurationChangeWatcherPlugin.onConfigurationFileChanged(ConfigurationChangeWatcherPlugin.java:30)
+	at play.ConfigurationChangeWatcherPlugin.detectChange(ConfigurationChangeWatcherPlugin.java:24)
+	at play.plugins.PluginCollection.detectChange(PluginCollection.java:598)
+	at play.Play.detectChanges(Play.java:641)
+	at play.Invoker$Invocation.init(Invoker.java:199)
+	at Invocation.HTTP Request(Play!)
+06 Apr 2017 15:12:11,567 INFO  ~ Connected to jdbc:postgresql:project for default
+06 Apr 2017 15:12:12,107 ERROR ~ 
+
+@73i36nnbd
+Internal Server Error (500) for request GET /
+
+Oops: PersistenceException
+Unexpected error : Unexpected Error, caused by exception PersistenceException: Unable to build EntityManagerFactory
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.Play.start(Play.java:569)
+	at play.Play.detectChanges(Play.java:659)
+	at play.Invoker$Invocation.init(Invoker.java:199)
+	at Invocation.HTTP Request(Play!)
+Caused by: javax.persistence.PersistenceException: Unable to build EntityManagerFactory
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:925)
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:900)
+	at play.db.jpa.JPAPlugin.onApplicationStart(JPAPlugin.java:204)
+	at play.plugins.PluginCollection.onApplicationStart(PluginCollection.java:616)
+	at play.Play.start(Play.java:539)
+	... 3 more
+Caused by: org.hibernate.AnnotationException: Illegal attempt to map a non collection as a @OneToMany, @ManyToMany or @CollectionOfElements: models.Tag.owningPost
+	at org.hibernate.cfg.annotations.CollectionBinder.getCollectionBinder(CollectionBinder.java:328)
+	at org.hibernate.cfg.AnnotationBinder.processElementAnnotations(AnnotationBinder.java:1849)
+	at org.hibernate.cfg.AnnotationBinder.processIdPropertiesIfNotAlready(AnnotationBinder.java:895)
+	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:728)
+	at org.hibernate.cfg.Configuration$MetadataSourceQueue.processAnnotatedClassesQueue(Configuration.java:3625)
+	at org.hibernate.cfg.Configuration$MetadataSourceQueue.processMetadata(Configuration.java:3579)
+	at org.hibernate.cfg.Configuration.secondPassCompile(Configuration.java:1381)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1786)
+	at org.hibernate.ejb.EntityManagerFactoryImpl.<init>(EntityManagerFactoryImpl.java:96)
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:918)
+	... 7 more
+06 Apr 2017 15:14:13,831 ERROR ~ 
+
+@73i36nnbe
+Internal Server Error (500) for request GET /
+
+Oops: PersistenceException
+Unexpected error : Unexpected Error, caused by exception PersistenceException: Unable to build EntityManagerFactory
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.Play.start(Play.java:569)
+	at play.Play.detectChanges(Play.java:656)
+	at play.Invoker$Invocation.init(Invoker.java:199)
+	at Invocation.HTTP Request(Play!)
+Caused by: javax.persistence.PersistenceException: Unable to build EntityManagerFactory
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:925)
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:900)
+	at play.db.jpa.JPAPlugin.onApplicationStart(JPAPlugin.java:204)
+	at play.plugins.PluginCollection.onApplicationStart(PluginCollection.java:616)
+	at play.Play.start(Play.java:539)
+	... 3 more
+Caused by: org.hibernate.AnnotationException: Illegal attempt to map a non collection as a @OneToMany, @ManyToMany or @CollectionOfElements: models.Tag.owningPost
+	at org.hibernate.cfg.annotations.CollectionBinder.getCollectionBinder(CollectionBinder.java:328)
+	at org.hibernate.cfg.AnnotationBinder.processElementAnnotations(AnnotationBinder.java:1849)
+	at org.hibernate.cfg.AnnotationBinder.processIdPropertiesIfNotAlready(AnnotationBinder.java:895)
+	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:728)
+	at org.hibernate.cfg.Configuration$MetadataSourceQueue.processAnnotatedClassesQueue(Configuration.java:3625)
+	at org.hibernate.cfg.Configuration$MetadataSourceQueue.processMetadata(Configuration.java:3579)
+	at org.hibernate.cfg.Configuration.secondPassCompile(Configuration.java:1381)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1786)
+	at org.hibernate.ejb.EntityManagerFactoryImpl.<init>(EntityManagerFactoryImpl.java:96)
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:918)
+	... 7 more
+06 Apr 2017 15:14:29,972 ERROR ~ 
+
+@73i36nnbf
+Internal Server Error (500) for request GET /
+
+Oops: PersistenceException
+Unexpected error : Unexpected Error, caused by exception PersistenceException: Unable to build EntityManagerFactory
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.Play.start(Play.java:569)
+	at play.Play.detectChanges(Play.java:656)
+	at play.Invoker$Invocation.init(Invoker.java:199)
+	at Invocation.HTTP Request(Play!)
+Caused by: javax.persistence.PersistenceException: Unable to build EntityManagerFactory
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:925)
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:900)
+	at play.db.jpa.JPAPlugin.onApplicationStart(JPAPlugin.java:204)
+	at play.plugins.PluginCollection.onApplicationStart(PluginCollection.java:616)
+	at play.Play.start(Play.java:539)
+	... 3 more
+Caused by: org.hibernate.AnnotationException: Illegal attempt to map a non collection as a @OneToMany, @ManyToMany or @CollectionOfElements: models.Tag.owningPost
+	at org.hibernate.cfg.annotations.CollectionBinder.getCollectionBinder(CollectionBinder.java:328)
+	at org.hibernate.cfg.AnnotationBinder.processElementAnnotations(AnnotationBinder.java:1849)
+	at org.hibernate.cfg.AnnotationBinder.processIdPropertiesIfNotAlready(AnnotationBinder.java:895)
+	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:728)
+	at org.hibernate.cfg.Configuration$MetadataSourceQueue.processAnnotatedClassesQueue(Configuration.java:3625)
+	at org.hibernate.cfg.Configuration$MetadataSourceQueue.processMetadata(Configuration.java:3579)
+	at org.hibernate.cfg.Configuration.secondPassCompile(Configuration.java:1381)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1786)
+	at org.hibernate.ejb.EntityManagerFactoryImpl.<init>(EntityManagerFactoryImpl.java:96)
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:918)
+	... 7 more
